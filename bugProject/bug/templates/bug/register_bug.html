@@ -1,0 +1,18 @@
+<!-- register_bug.html -->
+<h1>Register a Bug</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="description">Description:</label>
+    <textarea name="description" id="description" required></textarea>
+    <br>
+    <label for="bug_type">Bug Type:</label>
+    <input type="text" name="bug_type" id="bug_type" required>
+    <br>
+    <label for="report_date">Report Date:</label>
+    <input type="date" name="report_date" id="report_date" required>
+    <br>
+    <label for="status">Status:</label>
+    <input type="text" name="status" id="status" required>
+    <br>
+    <button type="submit">Submit</button>
+</form>
